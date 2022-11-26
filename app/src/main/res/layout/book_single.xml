@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/idTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="1"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Title Will Display Here"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/authorTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Author Name Will Display Here"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:tooltipText="Edit"
+                    android:id="@+id/edit"
+                    android:src="@drawable/edit"
+                    app:tint="#BDBABA" />
+                <ImageView
+                    app:tint="#BDBABA"
+                    android:id="@+id/delete"
+                    android:tooltipText="Delete"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/delete"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/pageTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:text="540"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
